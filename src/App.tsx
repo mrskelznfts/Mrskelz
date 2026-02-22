@@ -1103,10 +1103,22 @@ export default function App() {
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ duration: 0.6 }}
                 >
-                  <h1 className="text-5xl sm:text-8xl md:text-9xl font-display text-beige leading-[0.9] mb-4 sm:mb-6 drop-shadow-2xl">
+                  <h1 className="text-5xl sm:text-8xl md:text-9xl font-display text-beige leading-[0.9] mb-2 drop-shadow-2xl">
                     MR. <br />
                     <span className="text-gold">SKELZ</span>
                   </h1>
+                  <p className="text-sm sm:text-base font-bold text-beige/30 tracking-[0.5em] uppercase mb-6">
+                    Underground Society
+                  </p>
+                  <motion.div
+                    animate={{ y: [0, -10, 0] }}
+                    transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+                    className="inline-block mb-8"
+                  >
+                    <span className="font-display text-2xl sm:text-4xl text-neon-pink tracking-widest drop-shadow-[0_0_12px_rgba(255,20,147,0.7)]">
+                      MINTING SOON
+                    </span>
+                  </motion.div>
                   <p className="text-lg sm:text-xl md:text-2xl text-gold/80 tracking-wide max-w-2xl mx-auto lg:mx-0 leading-relaxed">
                     Built for the detail-obsessed. We’re bringing back the ink, the grit, and the character to your screen. At the end of the day, good art speaks for itself.
                   </p>
