@@ -1111,13 +1111,15 @@ export default function App() {
                     Underground Society
                   </p>
                   <motion.div
-                    animate={{ y: [0, -10, 0] }}
-                    transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
-                    className="inline-block mb-8"
+                    animate={{ opacity: [0.4, 0.8, 0.4] }}
+                    transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                    className="relative inline-block mb-10 px-6 py-2 group"
                   >
-                    <span className="font-display text-2xl sm:text-4xl text-neon-pink tracking-widest drop-shadow-[0_0_12px_rgba(255,20,147,0.7)]">
-                      MINTING SOON
+                    <div className="absolute inset-x-0 top-0 h-[1px] bg-gradient-to-r from-transparent via-gold/30 to-transparent" />
+                    <span className="font-display text-lg sm:text-xl text-gold/90 tracking-[0.6em] uppercase">
+                      Minting Soon
                     </span>
+                    <div className="absolute inset-x-0 bottom-0 h-[1px] bg-gradient-to-r from-transparent via-gold/30 to-transparent" />
                   </motion.div>
                   <p className="text-lg sm:text-xl md:text-2xl text-gold/80 tracking-wide max-w-2xl mx-auto lg:mx-0 leading-relaxed">
                     Built for the detail-obsessed. We’re bringing back the ink, the grit, and the character to your screen. At the end of the day, good art speaks for itself.
