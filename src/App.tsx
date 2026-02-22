@@ -376,8 +376,8 @@ const QnASection = () => {
       a: "No, and anyone telling you otherwise is a con artist. The MR.Skelz is built for Predictive Analytics it calculates probabilities and identifies high-value opportunities. It’s a tool for the disciplined, designed to increase your odds, not a \"money printer\" for the reckless."
     },
     {
-      q: "Why does the art look so… 'dirty'?",
-      a: "Because 'clean' is soulless. We’re tired of plastic, vector-perfect art. We went back to the Rubber-Hose era because it’s raw. We kept the film grain and the 'dirty' textures so it looks like a 100-year-old film reel recovered from a flooded basement."
+      q: "Is the gambling mechanism actually fair or is it rigged?",
+      a: "Every transaction and outcome is anchored to the blockchain via Provably Fair smart contracts. Mr. Skelz is the boss, but the ledger is the law. You can verify every single roll and prediction yourself. Transparency is our only rule."
     },
     {
       q: "Is this just another AI-generated collection?",
