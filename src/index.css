@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Limelight&family=Bowlby+One+SC&display=swap');
+
+@font-face {
+  font-family: 'Bros Pops';
+  src: url('/fonts/Bros Pops.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/Roboto-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@layer base {
+  body {
+    @apply bg-lavender text-beige antialiased;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .grainy-bg {
+    position: relative;
+    background: radial-gradient(circle at center, #7A6B7A 0%, #4A3B4A 100%);
+  }
+
+  .grainy-bg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+    opacity: 0.15;
+    pointer-events: none;
+  }
+
+  .glass {
+    @apply bg-white/10 backdrop-blur-md border border-white/20 shadow-xl;
+  }
+
+  .vintage-text {
+    @apply font-display tracking-tighter;
+  }
+}
+
+@keyframes pulse-neon {
+
+  0%,
+  100% {
+    opacity: 1;
+    filter: drop-shadow(0 0 5px #FF1493);
+  }
+
+  50% {
+    opacity: 0.7;
+    filter: drop-shadow(0 0 15px #FF1493);
+  }
+}
+
+.animate-pulse-neon {
+  animation: pulse-neon 2s infinite;
+}
