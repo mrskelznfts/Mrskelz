@@ -187,7 +187,7 @@ const ManifestoSection = () => (
             </p>
           </div>
           <p>
-            Built for the detail-obsessed. We’re bringing back the ink, the grit, and the character to your screen. At the end of the day, good art speaks for itself.
+            Mr. Skelz is a middle finger to the sterile, low-effort "art" suffocating your timeline. We’re digging up the grain, the ink, and the energy of the underground.
           </p>
         </div>
 
@@ -365,7 +365,7 @@ const QnASection = () => {
   const faqs = [
     {
       q: "What exactly is Mr. Skelz? A project? A roadmap?",
-      a: "Most people want to sell you a promise on a piece of paper. We’re selling a vibe that’s been dead since 1930. Built for the detail-obsessed. We’re bringing back the ink, the grit, and the character to your screen. At the end of the day, good art speaks for itself."
+      a: "Most people want to sell you a promise on a piece of paper. We’re selling a vibe that’s been dead since 1930. Mr. Skelz isn’t a 'project' he’s the boss, the dealer, and a middle finger to the sterile, low-effort art clogging up your life. We brought back the grain, the ink, and the high-stakes adrenaline of the underground."
     },
     {
       q: "What happened to my brain when I saw that animation?",
