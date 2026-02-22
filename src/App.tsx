@@ -364,8 +364,8 @@ const QnASection = () => {
 
   const faqs = [
     {
-      q: "What exactly is Mr. Skelz? A project? A roadmap?",
-      a: "Most people want to sell you a promise on a piece of paper. We’re selling a vibe that’s been dead since 1930. Mr. Skelz isn’t a 'project' he’s the boss, the dealer, and a middle finger to the sterile, low-effort art clogging up your life. We brought back the grain, the ink, and the high-stakes adrenaline of the underground."
+      q: "What exactly is the Mr. Skelz LAB AI feature?",
+      a: "It’s our proprietary neural engine designed to strip the \"luck\" out of the equation. We use machine learning to analyze betting patterns and real-time data, giving our holders a statistical edge that standard players simply don’t have. In the Bone Yard, the AI is your silent partner at the table."
     },
     {
       q: "What happened to my brain when I saw that animation?",
