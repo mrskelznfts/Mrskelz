@@ -58,7 +58,18 @@ const GrainyBackground = () => (
 );
 
 const Header = () => (
-  <header className="fixed top-0 left-0 right-0 z-50 px-4 py-4 sm:px-12 sm:py-10 flex justify-end items-center pointer-events-none">
+  <header className="fixed top-0 left-0 right-0 z-50 px-4 py-4 sm:px-12 sm:py-10 flex justify-between items-center pointer-events-none">
+    <motion.a
+      href="https://x.com/MrSkelz_"
+      target="_blank"
+      rel="noopener noreferrer"
+      initial={{ y: -20, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      className="pointer-events-auto glass p-3 sm:p-4 rounded-xl border border-gold/20 flex items-center justify-center group hover:border-gold/50 transition-all duration-500 shadow-lg hover:shadow-gold/10"
+    >
+      <Twitter className="w-5 h-5 sm:w-6 sm:h-6 text-beige group-hover:text-gold transition-colors duration-500" />
+    </motion.a>
     <motion.div
       initial={{ y: -20, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
