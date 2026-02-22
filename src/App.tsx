@@ -623,9 +623,14 @@ const EarlyAccessModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () =>
                             />
                           </div>
                         </div>
-                        <button type="button" className="bg-[#8B6B8B] border-2 border-[#4A2B4A] text-white px-6 py-1.5 sm:py-2 rounded-full font-bold text-sm sm:text-base shadow-[0_3px_0_0_#4A2B4A] hover:translate-y-[1px] hover:shadow-[0_2px_0_0_#4A2B4A] active:translate-y-[3px] active:shadow-none transition-all">
+                        <a
+                          href="https://x.com/MrSkelz_"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="bg-[#8B6B8B] border-2 border-[#4A2B4A] text-white px-6 py-1.5 sm:py-2 rounded-full font-bold text-sm sm:text-base shadow-[0_3px_0_0_#4A2B4A] hover:translate-y-[1px] hover:shadow-[0_2px_0_0_#4A2B4A] active:translate-y-[3px] active:shadow-none transition-all inline-block text-center"
+                        >
                           Follow
-                        </button>
+                        </a>
                       </div>
                       {errors.twitterUsername && <p className="text-[10px] text-red-600 font-bold ml-4 uppercase">{errors.twitterUsername}</p>}
 
