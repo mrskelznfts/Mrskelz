@@ -73,7 +73,7 @@ const Header = () => (
         <div className="absolute -inset-2 bg-gold/20 blur-lg rounded-full opacity-0 group-hover:opacity-100 transition-opacity" />
         <div className="relative w-12 h-12 sm:w-20 sm:h-20 rounded-xl sm:rounded-2xl border-2 border-gold/30 overflow-hidden shadow-2xl glass p-1 sm:p-1.5 transform group-hover:rotate-3 transition-transform">
           <img
-            src="https://i.imgur.com/svvgKvz.jpeg"
+            src="/images/profile-logo.png"
             alt="Mr Skelz Logo"
             className="w-full h-full object-cover rounded-lg sm:rounded-xl"
             referrerPolicy="no-referrer"
@@ -573,7 +573,7 @@ const EarlyAccessModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () =>
               <div className="flex flex-col items-center">
                 <div className="w-24 h-24 sm:w-32 sm:h-32 overflow-hidden rounded-2xl border-4 border-[#4A2B4A] shadow-[0_4px_0_rgba(74,43,74,1)]">
                   <img
-                    src="https://i.imgur.com/svvgKvz.jpeg"
+                    src="/images/profile-logo.png"
                     alt="Mr Skelz Logo"
                     className="w-full h-full object-cover object-top"
                     referrerPolicy="no-referrer"
