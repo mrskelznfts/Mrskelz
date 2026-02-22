@@ -380,8 +380,8 @@ const QnASection = () => {
       a: "Every transaction and outcome is anchored to the blockchain via Provably Fair smart contracts. Mr. Skelz is the boss, but the ledger is the law. You can verify every single roll and prediction yourself. Transparency is our only rule."
     },
     {
-      q: "Is this just another AI-generated collection?",
-      a: "Not a chance. This isn’t AI-generated slop. This is real ink and a relentless obsession with the craft. Every frame is a love letter to the Golden Era when games were punishing, quarters were the only currency that mattered, and graphics peaked at a glorious 320x224 resolution."
+      q: "Why did you choose the 1930s \"Rubber-Hose\" art style?",
+      a: "Because we’re sick of the \"perfect\" AI-generated sludge filling up everyone’s timeline. Most projects today are just prompts soulless, clean, and mathematically boring. We went back to 1930 because that era was about the human hand."
     },
     {
       q: "How many seats are at the table?",
