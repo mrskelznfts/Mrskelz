@@ -1108,7 +1108,7 @@ export default function App() {
                     <span className="text-gold">SKELZ</span>
                   </h1>
                   <p className="text-lg sm:text-xl md:text-2xl text-gold/80 tracking-wide max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-                    a middle finger to the boring, low-effort art filling up your timeline. We’re bringing back the grain, the ink, and the high-stakes energy of the underground.
+                    Built for the detail-obsessed. We’re bringing back the ink, the grit, and the character to your screen. At the end of the day, good art speaks for itself.
                   </p>
                 </motion.div>
 
