@@ -750,9 +750,9 @@ interface SkelzLabProps {
 
 const GallerySection = () => {
   const images = [
-    "https://i.imgur.com/Y0cxFto.jpeg",
-    "https://i.imgur.com/bccAg7V.jpeg",
-    "https://i.imgur.com/IfhsbqJ.jpeg",
+    "/images/nft/nft-1.png",
+    "/images/nft/nft-2.png",
+    "/images/nft/nft-3.png",
   ];
 
   return (
