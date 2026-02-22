@@ -121,9 +121,9 @@ const TripleThreat = () => (
           desc: "Classic cartoon safe with a neon digital keypad."
         },
         {
-          title: "Exclusive Rewards",
+          title: "Get high-precision probability data.",
           icon: <Crown className="w-10 h-10 sm:w-12 sm:h-12 text-beige" />,
-          desc: "Floating gold poker chip with a mini skeleton crown."
+          desc: "High-probability data designed to give you the ultimate edge."
         }
       ].map((item, i) => (
         <motion.div
