@@ -640,14 +640,24 @@ const EarlyAccessModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () =>
                           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-3">
                             <label className="text-[10px] sm:text-xs font-bold text-[#4A2B4A] uppercase tracking-wider">Required Tasks</label>
                             <div className="flex gap-2">
-                              <button type="button" className="flex-1 sm:flex-none bg-[#C5A3C5] border-2 border-[#4A2B4A] text-[#4A2B4A] text-[10px] py-1.5 px-4 rounded-full flex items-center justify-center gap-1.5 font-bold shadow-[0_2px_0_0_#4A2B4A] hover:translate-y-[1px] hover:shadow-[0_1px_0_0_#4A2B4A] transition-all">
+                              <a
+                                href="https://x.com/MrSkelz_/status/2025229812718080121?s=20"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex-1 sm:flex-none bg-[#C5A3C5] border-2 border-[#4A2B4A] text-[#4A2B4A] text-[10px] py-1.5 px-4 rounded-full flex items-center justify-center gap-1.5 font-bold shadow-[0_2px_0_0_#4A2B4A] hover:translate-y-[1px] hover:shadow-[0_1px_0_0_#4A2B4A] transition-all"
+                              >
                                 <Twitter className="w-3 h-3" />
                                 Retweet
-                              </button>
-                              <button type="button" className="flex-1 sm:flex-none bg-[#C5A3C5] border-2 border-[#4A2B4A] text-[#4A2B4A] text-[10px] py-1.5 px-4 rounded-full flex items-center justify-center gap-1.5 font-bold shadow-[0_2px_0_0_#4A2B4A] hover:translate-y-[1px] hover:shadow-[0_1px_0_0_#4A2B4A] transition-all">
+                              </a>
+                              <a
+                                href="https://x.com/MrSkelz_/status/2025229812718080121?s=20"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex-1 sm:flex-none bg-[#C5A3C5] border-2 border-[#4A2B4A] text-[#4A2B4A] text-[10px] py-1.5 px-4 rounded-full flex items-center justify-center gap-1.5 font-bold shadow-[0_2px_0_0_#4A2B4A] hover:translate-y-[1px] hover:shadow-[0_1px_0_0_#4A2B4A] transition-all"
+                              >
                                 <Twitter className="w-3 h-3" />
                                 Quote
-                              </button>
+                              </a>
                             </div>
                           </div>
                           <div className="bg-white/20 border border-[#4A2B4A]/20 rounded-xl px-4 py-2">
