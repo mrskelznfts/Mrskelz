@@ -372,8 +372,8 @@ const QnASection = () => {
       a: "That’s the 'short-circuit.' Every frame of Mr. Skelz is designed to be a gut punch. We’re chasing that raw, visceral high the feeling of seeing something that feels alive, jagged, and dangerous for the first time."
     },
     {
-      q: "Where does this all take place?",
-      a: "The Bone Yard. It’s a smoke-filled purgatory where the jazz is deafening and the stakes are higher than your life. If you’re looking for a hero to save you, you’ve walked into the wrong bar. Here, you don't just 'buy in' you claim your seat at the table."
+      q: "Does the MR.Skelz guarantee a win every time?",
+      a: "No, and anyone telling you otherwise is a con artist. The MR.Skelz is built for Predictive Analytics it calculates probabilities and identifies high-value opportunities. It’s a tool for the disciplined, designed to increase your odds, not a \"money printer\" for the reckless."
     },
     {
       q: "Why does the art look so… 'dirty'?",
