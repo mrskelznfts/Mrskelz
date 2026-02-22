@@ -832,31 +832,25 @@ const SkelzLab: React.FC<SkelzLabProps> = ({ onBack }) => {
     setLeverPulled(true);
 
     try {
-      const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
-      const finalPrompt = customPrompt || prompt || "Neon Fedora, Cyber-Cigar, Tuxedo";
-      const styleDesc = style === 'classic' ? "Black and white 1930s rubber-hose ink style" : "Vibrant 1930s rubber-hose style with neon noir colors";
-
-      const response = await ai.models.generateContent({
-        model: 'gemini-2.5-flash-image',
-        contents: {
-          parts: [{
-            text: `A high-quality 1930s rubber-hose animation style (Cuphead aesthetic) mischievous skeleton character.
-        Features: Large expressive eyes with pie-slice pupils, thick clean black outlines, muted vintage color palette (cream, burgundy, gold, navy), and a subtle grainy/noisy texture.
-        Character is Mr. Skelz, a skeleton in a tuxedo.
-        Traits to include: ${finalPrompt}.
-        Style details: ${styleDesc}. 
-The composition should be a close-up portrait with a simple muted background, exactly matching the iconic rubber-hose cartoon look.` }]
+      const response = await fetch('/api/generate', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
         },
-        config: {
-          imageConfig: { aspectRatio: "1:1" }
-        }
+        body: JSON.stringify({
+          prompt: customPrompt || prompt || "Neon Fedora, Cyber-Cigar, Tuxedo",
+          style: style
+        }),
       });
 
-      for (const part of response.candidates[0].content.parts) {
-        if (part.inlineData) {
-          setGeneratedImage(`data:image/png;base64,${part.inlineData.data}`);
-          break;
-        }
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.error || 'Failed to generate image');
+      }
+
+      const data = await response.json();
+      if (data.image) {
+        setGeneratedImage(`data:image/png;base64,${data.image}`);
       }
     } catch (error) {
       console.error("Generation failed:", error);
