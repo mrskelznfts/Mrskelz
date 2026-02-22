@@ -1164,6 +1164,13 @@ export default function App() {
       </AnimatePresence>
 
       <EarlyAccessModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+
+      {/* Footer Branding */}
+      <div className="fixed bottom-6 left-6 z-[60] pointer-events-none select-none hidden sm:block">
+        <p className="font-display text-gold/40 text-[10px] sm:text-xs tracking-[0.3em] uppercase">
+          Powered BY MR.SKELZ LAB
+        </p>
+      </div>
     </div>
   );
 }
