@@ -1,20 +1,57 @@
 <div align="center">
 <img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+
+# MR. SKELZ
+### *Underground Society*
 </div>
 
-# Run and deploy your AI Studio app
+---
 
-This contains everything you need to run your app locally.
+## 🎲 The Setup
+Mr. Skelz is a middle finger to the sterile, low-effort "art" suffocating your timeline. We’re digging up the grain, the ink, and the energy of the underground 1930s rubber-hose aesthetic.
 
-View your app in AI Studio: https://ai.studio/apps/ad51a393-6ef8-40b9-8f70-bc25bb38b364
+## 💀 The Dealer’s Manifesto
+Every frame of Mr. Skelz is a gut punch. Most projects try to sell you a roadmap; we’re selling a vibe that’s been buried since 1930. Mr. Skelz is for those who miss the smoke, the grit, and the gamble.
 
-## Run Locally
+## ✨ Key Features
+- **Early Access Society**: Secured portal for the inner circle.
+- **The Bone Yard**: A smoke-filled purgatory where the stakes are life and death.
+- **Skelz Lab AI**: (In Development) A neural mutation chamber for your digital alter-egos.
+- **Iconic Aesthetic**: Hand-inked Rubber-Hose style with a modern "Neon Noir" twist.
 
-**Prerequisites:**  Node.js
+## 🛠️ Technical Stack
+- **Frontend**: React 18, Vite, Tailwind CSS
+- **Animation**: Motion (Framer Motion)
+- **AI Integration**: Google Gemini API (for mutation cycles)
+- **Deployment**: Optimized for standard web hosting and Git-based workflows.
 
+## 🚀 Local Development
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### Prerequisites
+- [Node.js](https://nodejs.org/) (Latest LTS)
+
+### Steps
+1. **Clone the Repo**:
+   ```bash
+   git clone https://github.com/mrskelznfts/Mrskelz.git
+   cd Mrskelz
+   ```
+2. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
+3. **Configure Environment**:
+   Create a `.env.local` file and add your credentials:
+   ```env
+   GEMINI_API_KEY="your_api_key_here"
+   ```
+4. **Ignite the Engine**:
+   ```bash
+   npm run dev
+   ```
+   *Visit `http://localhost:3000` to enter the Yard.*
+
+---
+<div align="center">
+*"Are you in, or are you out?"*
+</div>
