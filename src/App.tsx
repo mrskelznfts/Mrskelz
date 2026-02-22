@@ -187,7 +187,7 @@ const ManifestoSection = () => (
             </p>
           </div>
           <p>
-            Mr. Skelz is a middle finger to the sterile, low-effort "art" suffocating your timeline. We’re digging up the grain, the ink, and the energy of the underground.
+            Built for the detail-obsessed. We’re bringing back the ink, the grit, and the character to your screen. At the end of the day, good art speaks for itself.
           </p>
         </div>
 
@@ -215,7 +215,7 @@ const BoneYardSection = () => (
           repeat: Infinity,
           ease: "easeInOut"
         }}
-        className="absolute -bottom-10 -left-10 sm:-bottom-20 sm:-left-40 pointer-events-none opacity-[0.08] sm:opacity-[0.15] z-0"
+        className="absolute -bottom-10 -left-10 sm:-bottom-20 sm:-left-40 pointer-events-none opacity-[0.2] sm:opacity-[0.25] z-0"
       >
         <img
           src="/images/Tombstone.png"
@@ -236,7 +236,7 @@ const BoneYardSection = () => (
           ease: "easeInOut",
           delay: 1
         }}
-        className="absolute -top-10 -right-10 sm:-top-20 sm:-right-40 pointer-events-none opacity-[0.04] sm:opacity-[0.08] z-0"
+        className="absolute -top-10 -right-10 sm:-top-20 sm:-right-40 pointer-events-none opacity-[0.12] sm:opacity-[0.15] z-0"
       >
         <img
           src="/images/Tombstone.png"
@@ -365,7 +365,7 @@ const QnASection = () => {
   const faqs = [
     {
       q: "What exactly is Mr. Skelz? A project? A roadmap?",
-      a: "Most people want to sell you a promise on a piece of paper. We’re selling a vibe that’s been dead since 1930. Mr. Skelz isn’t a 'project' he’s the boss, the dealer, and a middle finger to the sterile, low-effort art clogging up your life. We brought back the grain, the ink, and the high-stakes adrenaline of the underground."
+      a: "Most people want to sell you a promise on a piece of paper. We’re selling a vibe that’s been dead since 1930. Built for the detail-obsessed. We’re bringing back the ink, the grit, and the character to your screen. At the end of the day, good art speaks for itself."
     },
     {
       q: "What happened to my brain when I saw that animation?",
