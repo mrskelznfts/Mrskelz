@@ -321,14 +321,59 @@ const BoneYardSection = () => (
 );
 
 const CraftSection = () => (
-  <section className="py-24 px-6 relative">
-    <div className="max-w-5xl mx-auto">
+  <section className="py-24 px-6 relative overflow-hidden">
+    {/* Scattered Bone Accents Background */}
+    <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
+      {[...Array(6)].map((_, i) => (
+        <motion.div
+          key={i}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 0.08 }}
+          viewport={{ once: true }}
+          animate={{
+            y: [0, Math.random() * -30 - 10, 0],
+            rotate: [Math.random() * 360, Math.random() * 360 + 20, Math.random() * 360],
+          }}
+          transition={{
+            duration: 10 + Math.random() * 5,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: i * 0.5
+          }}
+          className="absolute"
+          style={{
+            left: `${Math.random() * 100}%`,
+            top: `${Math.random() * 100}%`,
+            width: `${Math.random() * 150 + 100}px`,
+            filter: 'grayscale(100%) brightness(150%)'
+          }}
+        >
+          <img src="/images/bone-accent.png" alt="" className="w-full h-full object-contain" />
+        </motion.div>
+      ))}
+    </div>
+
+    <div className="max-w-5xl mx-auto relative z-10">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="relative p-1 sm:p-2 bg-gold/10 rounded-[3rem] border-2 border-gold/20 shadow-2xl"
+        className="relative p-1 sm:p-2 bg-gold/10 rounded-[3rem] border-2 border-gold/20 shadow-2xl overflow-hidden"
       >
+        {/* Corner Bone Overlays */}
+        <motion.img
+          src="/images/bone-accent.png"
+          className="absolute -top-10 -left-10 w-40 h-40 opacity-20 -rotate-45 grayscale brightness-125 hidden sm:block pointer-events-none"
+          animate={{ rotate: [-45, -40, -45] }}
+          transition={{ duration: 6, repeat: Infinity }}
+        />
+        <motion.img
+          src="/images/bone-accent.png"
+          className="absolute -bottom-10 -right-10 w-48 h-48 opacity-20 rotate-[135deg] grayscale brightness-125 hidden sm:block pointer-events-none"
+          animate={{ rotate: [135, 140, 135] }}
+          transition={{ duration: 7, repeat: Infinity }}
+        />
+
         <div className="bg-burgundy/30 backdrop-blur-md rounded-[2.5rem] p-10 sm:p-20 border-2 border-white/5 relative overflow-hidden">
           {/* Vintage Corner Accents */}
           <div className="absolute top-8 left-8 w-12 h-12 border-t-2 border-l-2 border-gold/40" />
@@ -361,11 +406,18 @@ const CraftSection = () => (
                 Every frame is a love letter to the Golden Era when games were punishing, quarters were the only currency that mattered, and graphics peaked at a glorious 320x224 resolution. This is the franchise for those who miss the smoke, the grit, and the gamble.
               </p>
 
-              <div className="pt-8">
+              <div className="pt-8 relative group">
                 <p className="text-3xl sm:text-5xl font-display text-beige uppercase tracking-tight">
                   The dice are on the table. <br />
                   <span className="text-gold">Are you in, or are you out?</span>
                 </p>
+                {/* Floating bone behind the call to action */}
+                <motion.img
+                  src="/images/bone-accent.png"
+                  className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-32 opacity-[0.03] grayscale pointer-events-none"
+                  animate={{ scale: [1, 1.1, 1], rotate: [0, 2, 0] }}
+                  transition={{ duration: 10, repeat: Infinity }}
+                />
               </div>
             </div>
 
