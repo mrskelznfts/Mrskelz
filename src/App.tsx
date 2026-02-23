@@ -147,9 +147,31 @@ const TripleThreat = () => (
 
 const ManifestoSection = () => (
   <section className="max-w-5xl mx-auto px-4 sm:px-6 py-20 sm:py-32 relative overflow-hidden">
-    {/* Decorative Elements */}
-    <div className="absolute top-0 left-0 w-32 h-32 border-t-4 border-l-4 border-gold/20 rounded-tl-[3rem] -translate-x-6 -translate-y-6 hidden sm:block" />
-    <div className="absolute bottom-0 right-0 w-32 h-32 border-b-4 border-r-4 border-gold/20 rounded-br-[3rem] translate-x-6 translate-y-6 hidden sm:block" />
+    {/* Decorative Elements - Background Accents */}
+    <motion.div
+      animate={{
+        y: [0, -20, 0],
+        rotate: [0, 5, 0]
+      }}
+      transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+      className="absolute top-10 -left-20 w-64 h-64 opacity-10 pointer-events-none grayscale brightness-150 z-0"
+    >
+      <img src="/images/skull-accent.png" alt="" className="w-full h-full object-contain" />
+    </motion.div>
+
+    <motion.div
+      animate={{
+        y: [0, 20, 0],
+        rotate: [0, -10, 0]
+      }}
+      transition={{ duration: 10, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+      className="absolute bottom-10 -right-20 w-80 h-80 opacity-10 pointer-events-none grayscale brightness-150 z-0"
+    >
+      <img src="/images/bone-accent.png" alt="" className="w-full h-full object-contain" />
+    </motion.div>
+
+    <div className="absolute top-0 left-0 w-32 h-32 border-t-4 border-l-4 border-gold/20 rounded-tl-[3rem] -translate-x-6 -translate-y-6 hidden sm:block pointer-events-none" />
+    <div className="absolute bottom-0 right-0 w-32 h-32 border-b-4 border-r-4 border-gold/20 rounded-br-[3rem] translate-x-6 translate-y-6 hidden sm:block pointer-events-none" />
 
     <motion.div
       initial={{ opacity: 0, y: 30 }}
