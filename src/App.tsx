@@ -1050,50 +1050,58 @@ export default function App() {
           >
             {/* Hero Section */}
             <div className="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center min-h-[80vh] py-12 lg:py-0">
-              {/* Illustration Placeholder */}
+              {/* Illustration / GIF Logo */}
               <motion.div
                 initial={{ x: -50, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                className="relative order-2 lg:order-1 flex justify-center"
+                transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
+                className="relative order-2 lg:order-1 flex justify-center w-full"
               >
-                <div className="absolute -inset-10 bg-neon-pink/20 blur-[100px] rounded-full" />
-                <div className="relative glass w-full max-w-[280px] sm:max-w-none aspect-square rounded-[2.5rem] sm:rounded-[60px] flex items-center justify-center overflow-hidden border-2 sm:border-4 border-white/10 group">
+                {/* Spotlight & Aura Effects */}
+                <div className="absolute -inset-20 bg-neon-pink/10 blur-[120px] rounded-full animate-pulse" />
+                <div className="absolute -inset-10 bg-gold/5 blur-[80px] rounded-full delay-1000 animate-pulse" />
+
+                <div className="relative glass w-full max-w-[320px] sm:max-w-[450px] aspect-square rounded-[3rem] sm:rounded-[5rem] flex items-center justify-center overflow-hidden border-2 sm:border-4 border-white/10 group shadow-[0_0_50px_rgba(0,0,0,0.5)]">
+                  {/* Internal Vignette */}
+                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_30%,rgba(0,0,0,0.4)_100%)] z-10 pointer-events-none" />
+
                   <motion.div
                     animate={{
-                      y: [0, -20, 0],
-                      rotate: [0, 2, -2, 0]
+                      y: [0, -15, 0],
                     }}
-                    transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-                    className="relative z-10"
+                    transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+                    className="relative z-0 w-full h-full flex items-center justify-center"
                   >
-                    <Skull className="w-40 h-40 sm:w-64 sm:h-64 text-beige drop-shadow-[0_0_30px_rgba(212,175,55,0.4)]" />
-                    <div className="absolute -top-8 -left-6 sm:-top-12 sm:-left-8 w-20 h-20 sm:w-32 sm:h-32 bg-burgundy rounded-full -z-10 border-4 border-gold" />
-                    <div className="absolute top-1/2 -right-8 sm:-right-12 flex gap-4">
-                      <motion.div
-                        animate={{ rotate: 360 }}
-                        transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
-                      >
-                        <Dice5 className="w-10 h-10 sm:w-16 sm:h-16 text-gold drop-shadow-lg" />
-                      </motion.div>
-                    </div>
+                    <img
+                      src="/images/landing-logo.gif"
+                      alt="Mr Skelz Landing Animation"
+                      className="w-full h-full object-cover scale-105 group-hover:scale-110 transition-transform duration-700"
+                    />
                   </motion.div>
-                  {/* Floating Stars */}
-                  {[...Array(5)].map((_, i) => (
-                    <motion.div
-                      key={i}
-                      className="absolute text-gold"
-                      initial={{
-                        x: Math.random() * 80 + 10 + '%',
-                        y: Math.random() * 80 + 10 + '%'
-                      }}
-                      animate={{ scale: [1, 1.5, 1], opacity: [0.3, 1, 0.3] }}
-                      transition={{ duration: 2 + i, repeat: Infinity }}
-                    >
-                      <Sparkles className="w-4 h-4 sm:w-6 sm:h-6" />
-                    </motion.div>
-                  ))}
+
+                  {/* Decorative Overlays */}
+                  <div className="absolute inset-0 border-[20px] border-black/10 pointer-events-none z-20" />
+                  <div className="absolute top-0 left-0 w-full h-1/4 bg-gradient-to-b from-black/20 to-transparent pointer-events-none z-20" />
+
+                  {/* Floating Stats/Accents */}
+                  <div className="absolute top-8 left-8 z-30 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    <div className="flex items-center gap-2 px-3 py-1 bg-gold/20 backdrop-blur-md rounded-full border border-gold/30">
+                      <div className="w-1.5 h-1.5 bg-gold rounded-full animate-ping" />
+                      <span className="text-[10px] font-bold text-gold uppercase tracking-[0.2em]">Live Beta</span>
+                    </div>
+                  </div>
                 </div>
+
+                {/* Satellite Elements */}
+                <motion.div
+                  animate={{ rotate: -360 }}
+                  transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
+                  className="absolute inset-x-[-10%] inset-y-[-10%] pointer-events-none hidden sm:block"
+                >
+                  <Dice5 className="absolute top-0 right-[20%] w-8 h-8 text-gold/30" />
+                  <Crown className="absolute bottom-[10%] left-[15%] w-10 h-10 text-gold/20" />
+                  <Sparkles className="absolute top-[40%] left-[-5%] w-6 h-6 text-neon-pink/40" />
+                </motion.div>
               </motion.div>
 
               {/* Copy */}
