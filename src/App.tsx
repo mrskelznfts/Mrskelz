@@ -1082,14 +1082,6 @@ export default function App() {
                   {/* Decorative Overlays */}
                   <div className="absolute inset-0 border-[20px] border-black/10 pointer-events-none z-20" />
                   <div className="absolute top-0 left-0 w-full h-1/4 bg-gradient-to-b from-black/20 to-transparent pointer-events-none z-20" />
-
-                  {/* Floating Stats/Accents */}
-                  <div className="absolute top-8 left-8 z-30 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                    <div className="flex items-center gap-2 px-3 py-1 bg-gold/20 backdrop-blur-md rounded-full border border-gold/30">
-                      <div className="w-1.5 h-1.5 bg-gold rounded-full animate-ping" />
-                      <span className="text-[10px] font-bold text-gold uppercase tracking-[0.2em]">Live Beta</span>
-                    </div>
-                  </div>
                 </div>
 
                 {/* Satellite Elements */}
