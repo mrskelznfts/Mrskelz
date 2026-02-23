@@ -1133,10 +1133,10 @@ export default function App() {
                   className="flex flex-col sm:flex-row flex-wrap gap-4 sm:gap-6 justify-center lg:justify-start"
                 >
                   <button
-                    onClick={() => setIsModalOpen(true)}
-                    className="w-full sm:w-auto px-10 py-4 sm:py-5 bg-gold text-burgundy rounded-2xl font-display text-xl sm:text-2xl shadow-[0_6px_0_0_#A6892C] hover:translate-y-1 hover:shadow-[0_2px_0_0_#A6892C] active:translate-y-2 active:shadow-none transition-all"
+                    disabled
+                    className="w-full sm:w-auto px-10 py-4 sm:py-5 bg-gold/50 text-burgundy/50 rounded-2xl font-display text-xl sm:text-2xl cursor-not-allowed transition-all"
                   >
-                    EARLY ACCESS
+                    EARLY ACCESS (LOCKED)
                   </button>
 
                   <button
