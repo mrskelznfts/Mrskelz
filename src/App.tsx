@@ -1214,13 +1214,13 @@ export default function App() {
                   </button>
 
                   <button
-                    onClick={() => setPhase('lab')}
-                    className="w-full sm:w-auto glass px-10 py-4 sm:py-5 rounded-2xl font-bold flex items-center justify-center lg:justify-start gap-4 transition-all hover:scale-105 active:scale-95 hover:border-gold/50"
+                    disabled
+                    className="w-full sm:w-auto glass px-10 py-4 sm:py-5 rounded-2xl font-bold flex items-center justify-center lg:justify-start gap-4 opacity-50 cursor-not-allowed transition-all"
                   >
                     <div className="relative">
-                      <div className="w-3 h-3 bg-white/20 rounded-full animate-pulse" />
+                      <div className="w-3 h-3 bg-white/20 rounded-full" />
                     </div>
-                    MR.SKELZ LAB AI
+                    MR.SKELZ LAB AI (LOCKED)
                   </button>
                 </motion.div>
               </div>
