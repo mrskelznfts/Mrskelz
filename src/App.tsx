@@ -1207,20 +1207,20 @@ export default function App() {
                   className="flex flex-col sm:flex-row flex-wrap gap-4 sm:gap-6 justify-center lg:justify-start"
                 >
                   <button
-                    disabled
-                    className="w-full sm:w-auto px-10 py-4 sm:py-5 bg-gold/50 text-burgundy/50 rounded-2xl font-display text-xl sm:text-2xl cursor-not-allowed transition-all"
+                    onClick={() => setIsModalOpen(true)}
+                    className="w-full sm:w-auto px-10 py-4 sm:py-5 bg-gold text-burgundy rounded-2xl font-display text-xl sm:text-2xl transition-all hover:scale-105 active:scale-95 shadow-[0_6px_0_0_#A6892C] hover:shadow-[0_4px_0_0_#A6892C]"
                   >
-                    EARLY ACCESS (LOCKED)
+                    EARLY ACCESS
                   </button>
 
                   <button
-                    disabled
-                    className="w-full sm:w-auto glass px-10 py-4 sm:py-5 rounded-2xl font-bold flex items-center justify-center lg:justify-start gap-4 opacity-50 cursor-not-allowed transition-all"
+                    onClick={() => setPhase('lab')}
+                    className="w-full sm:w-auto glass px-10 py-4 sm:py-5 rounded-2xl font-bold flex items-center justify-center lg:justify-start gap-4 transition-all hover:scale-105 active:scale-95 hover:border-gold/50"
                   >
                     <div className="relative">
-                      <div className="w-3 h-3 bg-white/20 rounded-full" />
+                      <div className="w-3 h-3 bg-white/20 rounded-full animate-pulse" />
                     </div>
-                    MR.SKELZ LAB AI (LOCKED)
+                    MR.SKELZ LAB AI
                   </button>
                 </motion.div>
               </div>
