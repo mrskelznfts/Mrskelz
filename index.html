@@ -6,36 +6,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MR.SKELZ</title>
   <link rel="icon" type="image/png" href="/images/Tombstone.png" />
-  <script>
-    // Prevent right-click
-    document.addEventListener('contextmenu', event => event.preventDefault());
+  <meta name="description" content="MR. SKELZ - The Underground Society. A hand-crafted rubber-hose art collection." />
 
-    // Prevent common DevTools shortcuts
-    document.onkeydown = function (e) {
-      if (event.keyCode == 123) { return false; }
-      if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) { return false; }
-      if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) { return false; }
-      if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) { return false; }
-      if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) { return false; }
-    }
-  </script>
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mrskelz.xyz/" />
+  <meta property="og:title" content="MR. SKELZ | Underground Society" />
+  <meta property="og:description"
+    content="Enter the Bone Yard. A unique hand-drawn collection inspired by 1930s animation." />
+  <meta property="og:image" content="/images/profile-logo.png" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://mrskelz.xyz/" />
+  <meta property="twitter:title" content="MR. SKELZ | Underground Society" />
+  <meta property="twitter:description"
+    content="Enter the Bone Yard. A unique hand-drawn collection inspired by 1930s animation." />
+  <meta property="twitter:image" content="/images/profile-logo.png" />
 </head>
 
-<body oncontextmenu="return false;">
+<body>
   <div id="root"></div>
   <script type="module" src="/src/main.tsx"></script>
-  <script>
-    // Detect if DevTools is open via debugger
-    setInterval(function () {
-      const start = new Date();
-      debugger;
-      const end = new Date();
-      if (end - start > 100) {
-        // If debugger causes a significant delay, DevTools is likely open
-        document.body.innerHTML = "<div style='background:#000;color:gold;height:100vh;display:flex;align-items:center;justify-content:center;font-family:serif;font-size:2rem;'>MR. SKELZ IS WATCHING... NO PEEPING!</div>";
-      }
-    }, 1000);
-  </script>
 </body>
 
 </html>

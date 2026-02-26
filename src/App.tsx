@@ -450,8 +450,8 @@ const QnASection = () => {
       a: "No, and anyone telling you otherwise is a con artist. The MR.Skelz is built for Predictive Analytics it calculates probabilities and identifies high-value opportunities. It’s a tool for the disciplined, designed to increase your odds, not a \"money printer\" for the reckless."
     },
     {
-      q: "Is the gambling mechanism actually fair or is it rigged?",
-      a: "Every transaction and outcome is anchored to the blockchain via Provably Fair smart contracts. Mr. Skelz is the boss, but the ledger is the law. You can verify every single roll and prediction yourself. Transparency is our only rule."
+      q: "Is the gaming dynamics actually fair or is it secure?",
+      a: "Every transaction and outcome is anchored to the blockchain via Provably Fair smart contracts. Mr. Skelz is the boss, but the ledger is the law. You can verify every single roll and event yourself. Transparency is our only rule."
     },
     {
       q: "Why did you choose the 1930s \"Rubber-Hose\" art style?",
@@ -462,8 +462,8 @@ const QnASection = () => {
       a: "Only 1,991 of you are getting in. It’s a tight circle, just the way the Boss likes it. Once the supply is claimed, the doors to the Yard are locked tight."
     },
     {
-      q: "Where is this heist going down?",
-      a: "We’re hitting the Ethereum network. It’s the high-stakes playground where the real players live. You can find the launching on OpenSea that’s where the exchange happens. No side-streets, no back-alleys, just the main stage."
+      q: "Where is this event going down?",
+      a: "We’re hitting the Ethereum network. It’s the high-stakes playground where the real players live. You can find the launch on OpenSea that’s where the exchange happens. No side-streets, no back-alleys, just the main stage."
     },
     {
       q: "How do I know a Skelz when I see one?",
